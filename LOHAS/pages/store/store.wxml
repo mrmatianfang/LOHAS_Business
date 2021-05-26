@@ -1,0 +1,58 @@
+<!--pages/store/store.wxml-->
+<view class="container">
+  <map class="map" id="myMap" longitude="{{userinfo.shop_longitude}}" latitude="{{userinfo.shop_latitude}}" scale="{{scale}}" show-location='true' markers="{{markers}}">
+    <view class="upperView" style="top:{{upperViewTop}}px;height:{{upperViewHeight}}px" animation="{{ani}}">
+      <!-- 回到当前定位的图标 -->
+      <cover-view class='top_nav_c' bindtap='bindtap'>
+        <cover-image src='../../images/position.png' class='c_img'></cover-image>
+      </cover-view>
+    </view>
+  </map>
+  
+</view>
+<van-divider contentPosition="center">我的店铺</van-divider>
+<view >
+  <van-grid clickable column-num="2">
+  <van-grid-item
+    icon="clock-o"
+    link-type="navigateTo"
+    url="/pages/product/ddl_product/ddl_product"
+    text="临期商品管理"
+  />
+  <van-grid-item
+    icon="comment-circle-o"
+    link-type="navigateTo"
+    url="/pages/announcement/announcement"
+    text="公告管理"
+  />
+  </van-grid>
+  <van-grid clickable column-num="2">
+    <van-grid-item
+    icon="hot-o"
+    link-type="navigateTo"
+    url="/pages/product/forsale_product/forsale_product"
+    text="折扣商品管理"
+  />
+  <van-grid-item
+    icon="orders-o"
+    link-type="navigateTo"
+    url="/pages/order/order"
+    text="订单管理"
+  />
+  </van-grid>
+  <van-grid clickable column-num="2">
+    <van-grid-item
+    icon="chat-o"
+    link-type="navigateTo"
+    url="/pages/comment/index"
+    text="我的评论"
+  />
+  <van-grid-item
+    icon="warn-o"
+    link-type="navigateTo"
+    url="/pages/verification/index"
+    text="核验订单"
+  />
+  </van-grid>
+</view>
+

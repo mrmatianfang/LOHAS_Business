@@ -1,0 +1,11 @@
+<!--pages/verification/index.wxml-->
+<view class="verification_wrap">
+  <van-uploader file-list="{{ fileList }}" max-count="1"
+    bind:after-read="afterRead"
+    bind:delete="onDeleteClick"
+    accept="image">
+  </van-uploader>
+</view>
+<view class="bottom_btn">
+    <button class="submit_button" bindtap="onBottomClick">提交</button>
+</view>

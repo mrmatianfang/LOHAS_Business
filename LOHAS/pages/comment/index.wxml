@@ -1,0 +1,35 @@
+<!--pages/comment/comment.wxml-->
+<view>
+  <view class="container">
+    <view class="card-body">
+      <view class="page-section">
+        <view class="page-section-title">
+        </view>
+        <view class="page-section-spacing">
+          <scroll-view scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll"
+            scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+            <block wx:if="{{shop_comments.length!==0}}">
+              <view class="menu_item" wx:for="{{shop_comments}}" wx:for-index="index" wx:for-item="item"
+                wx:key="comment_id">
+                <navigator>
+                  <van-swipe-cell id="swipe-cell" left-width="{{ 0 }}" right-width="{{ 0 }}"
+                    name="{{item.comment_id}}" async-close bind:close="onClose">
+                    <van-card desc="{{item.content}}"  class="comment-card">
+                      <view slot="footer">
+                        <label>发布时间：{{item.comment_time}}</label>
+                      </view>
+                    </van-card>
+                  </van-swipe-cell>
+                  <view class="apart"></view>
+                </navigator>
+              </view>
+            </block>
+            <block wx:else>
+              暂无评论
+            </block>
+          </scroll-view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

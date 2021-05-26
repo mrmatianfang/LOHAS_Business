@@ -1,0 +1,24 @@
+/* pages/verification/index.wxss */
+
+.verification_wrap{
+  height: 40px;
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom_btn{
+  width:100%;
+  position:fixed;
+  bottom:0;
+}
+
+.submit_button{
+  width: 98%;
+  background-color: #9ccd7a;
+  font-size: 28rpx;
+  color: white;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+}

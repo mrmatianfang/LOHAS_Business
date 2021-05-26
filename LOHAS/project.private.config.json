@@ -1,0 +1,90 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "announcement编辑",
+          "pathName": "pages/announcement/announcement",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "login编译",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "发布公告",
+          "pathName": "pages/announcement/releaseAnnouncement",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "临期商品管理",
+          "pathName": "pages/product/ddl_product/ddl_product",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "发布商品",
+          "pathName": "pages/product/ddl_product/create_ddl_product",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "折扣商品管理",
+          "pathName": "pages/product/forsale_product/forsale_product",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "个人信息",
+          "pathName": "pages/user/user",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "折扣商品管理",
+          "pathName": "pages/product/forsale_product/forsale_product",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "编辑个人信息",
+          "pathName": "pages/user/update",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "盲盒管理",
+          "pathName": "pages/product/mystery_box/mystery_box",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "更新盲盒",
+          "pathName": "pages/product/mystery_box/update",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "核验订单",
+          "pathName": "pages/verification/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

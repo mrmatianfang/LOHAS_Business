@@ -1,0 +1,24 @@
+/* pages/store/store.wxss */
+.container {
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rpx 0 10rpx 0;
+} 
+
+.map{
+  width: 100%;
+  height: 50vh;
+}
+
+.top_nav_c {
+  width: 30px;
+  height: 30px;
+  bottom:100rpx;
+}
+
+.upperView {
+  position: fixed;
+  width: 100%;
+  height:100%;
+}
